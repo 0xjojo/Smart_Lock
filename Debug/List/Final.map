@@ -1,0 +1,45 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+validIDs                                                                          0x02D7      10
+_base_y (alcd.lib)                                                                0x02E1       4
+_lcd_maxx                                                                         0x02E5       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+inputPc                                                                           R4,R5        2
+id                                                                                R6,R7        2
+inputPc_2                                                                         R8,R9        2
+x                                                                                 R10,R11      2
+_lcd_x                                                                            R13          1
+_lcd_y                                                                            R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x0015B    155
+isValidId                                                                         0x001F6     26
+getInput                                                                          0x00210     35
+keypad                                                                            0x00233     94
+EE_Write                                                                          0x00291     14
+EE_Read                                                                           0x0029F     12
+Peep                                                                              0x002AB      9
+ext1                                                                              0x002B4     45
+exp0                                                                              0x002E1     53
+_lcd_write_nibble_G100                                                            0x00316     21
+_lcd_write_data                                                                   0x0032B     13
+lcd_gotoxy                                                                        0x00338     18
+lcd_clear                                                                         0x0034A     10
+lcd_putchar                                                                       0x00354     22
+lcd_puts                                                                          0x0036A     15
+lcd_init                                                                          0x00379     44
+_print_G101                                                                       0x003A5    294
+put_lcd_G101                                                                      0x004CB     14
+lcd_printf                                                                        0x004D9     35
+strlen                                                                            0x004FC     12
+strlenf                                                                           0x00508     13

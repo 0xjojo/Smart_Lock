@@ -1408,9 +1408,9 @@ _main:
 ; .FSTART _main
 ; 0000 0011 
 ; 0000 0012 	unsigned char passcode;
-; 0000 0013 	DDRD = 0b11110011 ; // set port D as output all 1 for motor and buzzer
+; 0000 0013 	DDRD = 0xff ; // set port D as output all 1 for motor and buzzer
 ;	passcode -> R17
-	LDI  R30,LOW(243)
+	LDI  R30,LOW(255)
 	OUT  0x11,R30
 ; 0000 0014 	MCUCR = 1 << ISC01 | 1 << ISC00; //choosing the rising edge inttrupt
 	LDI  R30,LOW(3)

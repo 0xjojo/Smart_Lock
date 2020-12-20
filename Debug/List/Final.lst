@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  D:\(9)Ninth term\Embedded Systems\Final project\Debug\List\Final.asm Mon Dec 07 20:34:37 2020
+AVRASM ver. 2.1.30  D:\(9)Ninth term\Embedded Systems\Final project\Debug\List\Final.asm Wed Dec 16 09:47:09 2020
 
 D:\(9)Ninth term\Embedded Systems\Final project\Debug\List\Final.asm(1095): warning: Register r4 already defined by the .DEF directive
 D:\(9)Ninth term\Embedded Systems\Final project\Debug\List\Final.asm(1096): warning: Register r5 already defined by the .DEF directive
@@ -1555,9 +1555,9 @@ D:\(9)Ninth term\Embedded Systems\Final project\Debug\List\Final.asm(1147): warn
                  ; .FSTART _main
                  ; 0000 0011 
                  ; 0000 0012 	unsigned char passcode;
-                 ; 0000 0013 	DDRD = 0b11110011 ; // set port D as output all 1 for motor and buzzer
+                 ; 0000 0013 	DDRD = 0xff ; // set port D as output all 1 for motor and buzzer
                  ;	passcode -> R17
-00015b efe3      	LDI  R30,LOW(243)
+00015b efef      	LDI  R30,LOW(255)
 00015c bbe1      	OUT  0x11,R30
                  ; 0000 0014 	MCUCR = 1 << ISC01 | 1 << ISC00; //choosing the rising edge inttrupt
 00015d e0e3      	LDI  R30,LOW(3)

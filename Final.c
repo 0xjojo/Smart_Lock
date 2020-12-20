@@ -16,7 +16,7 @@ void main(void)
 {
 
 	unsigned char passcode;
-	DDRD = 0b11110011 ; // set port D as output all 1 for motor and buzzer
+	DDRD = 0xff ; // set port D as output all 1 for motor and buzzer
 	MCUCR = 1 << ISC01 | 1 << ISC00; //choosing the rising edge inttrupt
 	MCUCR = 1 << ISC01 | 1 << ISC00; // Trigger INT0 on rising edge
 	GICR |= 1 << 6;     //Specific interrupt enable

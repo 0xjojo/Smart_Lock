@@ -45,7 +45,7 @@
 ;PCODE: $0000000D VOL: 0
 ; 0000 0011 
 ; 0000 0012 	unsigned char passcode;
-; 0000 0013 	DDRD = 0b11110011 ; // set port D as output all 1 for motor and buzzer
+; 0000 0013 	DDRD = 0xff ; // set port D as output all 1 for motor and buzzer
 ;	passcode -> R17
 ;PCODE: $0000000E VOL: 0
 ;PCODE: $0000000F VOL: 0
